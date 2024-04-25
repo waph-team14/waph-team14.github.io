@@ -19,6 +19,9 @@
             padding: 20px;
             margin-top: 20px;
             transition: transform 0.2s;
+            text-decoration: none; /* Remove link underlines */
+            color: #333; /* Standard text color for links */
+            display: block; /* Make sure the link takes up the whole card space */
         }
         .profile-card:hover {
             transform: translateY(-5px); /* Lift effect on hover */
@@ -30,15 +33,12 @@
             border: 5px solid #ffffff; /* White border around the image */
             box-shadow: 0 2px 6px rgba(0,0,0,0.15);
         }
-        .email-link {
+        .email-link, .profile-card:hover .email-link {
             color: #007bff;
             text-decoration: none;
         }
         .email-link:hover {
             text-decoration: underline;
-        }
-        .project-link, .video-link {
-            text-decoration: none;
         }
         .container {
             padding-top: 30px;
@@ -62,33 +62,32 @@
         <div class="row justify-content-center">
             <!-- Team Member Profile Cards -->
             <div class="col-md-4">
-                <div class="profile-card text-center">
+                <a href="https://gopaluna.github.io/" target="_blank" class="profile-card text-center">
                     <img src="headshots/phani_headshot.jpeg" alt="Phani's Headshot" class="headshot img-fluid mb-3">
                     <h3>Phani Gopaluni</h3>
-                    <p><a href="mailto:gopaluna@mail.uc.edu" class="email-link">gopaluna@mail.uc.edu</a></p>
-                </div>
+                    <p class="email-link">gopaluna@mail.uc.edu</p>
+                </a>
             </div>
             <div class="col-md-4">
-                <div class="profile-card text-center">
-                    <img src="headshots
-/head.png" alt="Rohith's Headshot" class="headshot img-fluid mb-3">
+                <a href="https://koppulrh.github.io/projectrk.html#WAPH" target="_blank" class="profile-card text-center">
+                    <img src="headshots/head.png" alt="Rohith's Headshot" class="headshot img-fluid mb-3">
                     <h3>Koppula Rohith</h3>
-                    <p><a href="mailto:koppulrh@mail.uc.edu" class="email-link">koppulrh@mail.uc.edu</a></p>
-                </div>
+                    <p class="email-link">koppulrh@mail.uc.edu</p>
+                </a>
             </div>
             <div class="col-md-4">
-                <div class="profile-card text-center">
+                <a href="https://sravan230412.github.io/projects/project1/index" target="_blank" class="profile-card text-center">
                     <img src="headshots/my.jpg" alt="Sravan's Headshot" class="headshot img-fluid mb-3">
                     <h3>Sravan Kumar Bhavana</h3>
-                    <p><a href="mailto:bhavansr@mail.uc.edu" class="email-link">bhavansr@mail.uc.edu</a></p>
-                </div>
+                    <p class="email-link">bhavansr@mail.uc.edu</p>
+                </a>
             </div>
             <div class="col-md-4">
-                <div class="profile-card text-center">
+                <a href="https://jashhhhhhhhhhh.github.io/bollepjh-uc.github.io/" target="_blank" class="profile-card text-center">
                     <img src="headshots/jashheadshot.jpeg" alt="Jaswanth's Headshot" class="headshot img-fluid mb-3">
                     <h3>Jaswanth Bollepalli</h3>
-                    <p><a href="mailto:bollepjh@mail.uc.edu" class="email-link">bollepjh@mail.uc.edu</a></p>
-                </div>
+                    <p class="email-link">bollepjh@mail.uc.edu</p>
+                </a>
             </div>
         </div>
 
